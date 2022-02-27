@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
         long_description = f.read()
     
     setup(
-        name                = 'tootorch',
+        name                = 'weight2cpp',
         version             = '0.1', # PyPI에 올릴 version 
         long_description    = long_description, # README.md 내용을 PyPI project Description에 넣기
         long_description_content_type = 'text/markdown', # 형식은 markdown으로 지정

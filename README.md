@@ -2,19 +2,30 @@
 ```
 pip install weight2cpp
 ```
+# weight array output
+```
+weights = model.get_weights()
 
-# c language app
+from weight2cpp import weight2cpp
+WC=weight2cpp.Predict2Cpp()
+WC.getCpp(weights)
+print(WC.cpp_array)
+with open('cpp_weight_array.txt', 'w') as f:
+  f.write(WC.cpp_array)
+```
+
+# Apply to c language
 ```
 #include <stdio.h>
 #include <math.h>
 
-float mdw[5][][]={
-...
-};
+//float mdw[5][][]={
+//...
+//};
 
-int ln=5;
-int ls[5]={1, 2, 2, 3, 1};
-int latf[5]={0,1,0,3,0}; //Input Activation Function num; latf[0]= input layer
+//int ln=5;
+//int ls[5]={1, 2, 2, 3, 1};
+//int latf[5]={0,1,0,3,0}; //Input Activation Function num; latf[0]= input layer
 //int model_struct={1, 2, 2, 3, 1};
 //int Layers, Rows, Clms = 5, 5, 3;
 

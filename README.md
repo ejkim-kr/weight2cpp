@@ -62,7 +62,7 @@ float predict_cal()
     int lrr[100];
 
     lrr[0]=1;
-    for(l=1; l<ln; l++){lrr[l]= ls[l-1] + 2;} //get node value row on layer 
+    for(l=1; l<ln; l++){lrr[l]= ls[l-1] + 2;} //get node value row on the layer 
 
     for(l=1; l<ln; l++){
 

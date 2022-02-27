@@ -14,7 +14,7 @@ with open('cpp_weight_array.txt', 'w') as f:
   f.write(WC.cpp_array)
 ```
 
-# Apply to c language
+# Apply to c++
 ```
 #include <stdio.h>
 #include <math.h>

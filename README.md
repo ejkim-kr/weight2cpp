@@ -7,6 +7,7 @@ pip install weight2cpp
 weights = model.get_weights()
 
 from weight2cpp import weight2cpp
+
 WC=weight2cpp.Predict2Cpp()
 WC.getCpp(weights)
 print(WC.cpp_array)
